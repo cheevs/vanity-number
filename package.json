@@ -10,7 +10,8 @@
     "test": "jest",
     "lint": "npx eslint .",
     "build-ui": "react-scripts build",
-    "start-ui": "react-scripts start"
+    "start-ui": "react-scripts start",
+    "eject-ui": "react-scripts eject"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.70.0",
