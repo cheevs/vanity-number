@@ -70,7 +70,7 @@ await Promise.all(promises);
 
 These three optimization reduced the total execution time from 30s to less than 4s.
 
-##### Sorting - the best vanity number
+#### Sorting - the best vanity number
 Ideally a perfect vanity number could be created for any phone number something like 1-800-GET-CASH.
 The reality is that there are just not enough permutations of the phone number to create meaningingful words.
 
