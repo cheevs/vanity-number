@@ -70,6 +70,15 @@ await Promise.all(promises);
 
 These three optimization reduced the total execution time from 30s to less than 4s.
 
+##### Sorting - the best vanity number
+Ideally a perfect vanity number could be created for any phone number something like 1-800-GET-CASH.
+The reality is that there are just not enough permutations of the phone number to create meaningingful words.
+
+The "best" is determined by finding the largest word that matches. Then prioritizes word matches toward the end of the phone number.
+For example 1-800-CASH-123 would be lower ranked than 1-800-123-CASH.
+
+The hope is that the best will be a 4 character match at the end of the number.
+
 ## Installation to an AWS Account
 * Node Version 12x or greater
 * NPM - Node Package Manager
