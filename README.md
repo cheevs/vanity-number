@@ -14,9 +14,9 @@ The webapp will allow the user to see the top five vanity numbers generated.
 
 [Useful commands](#useful-commands)
 
-[Production shortcuts and improvements](production-shortcuts-and-improvements)
+[Production shortcuts and improvements](#production-shortcuts-and-improvements)
 
-[Implementation with more time](implementation-with-more-time)
+[Implementation with more time](#implementation-with-more-time)
 
 ## Try it out yourself!
 Call the phone number: **619-866-0474**
