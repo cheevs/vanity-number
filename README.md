@@ -8,9 +8,9 @@ The webapp will allow the user to see the top five vanity numbers generated.
 
 [High Level Architecture](#high-level-architecture)
 
-[Installation to an AWS Account](#installation-to-an-aws-account)
-
 [Algorithm Generating Vanity Numbers](#algorithm-generating-vanity-numbers)
+
+[Installation to an AWS Account](#installation-to-an-aws-account)
 
 [Useful commands](#useful-commands)
 
