@@ -79,6 +79,9 @@ For example 1-800-CASH-123 would be lower ranked than 1-800-123-CASH.
 
 The hope is that the best will be a 4 character match at the end of the number.
 
+There are lot of improvements to make for the sorting. The dictionary has a lot of words that are not relevant or meanings are obscure such as acronyms.
+A simple approach would be to give a relevance score based on the appearance of the words in modern day writings, novels, websites etc.
+
 ## Installation to an AWS Account
 * Node Version 12x or greater
 * NPM - Node Package Manager
