@@ -19,7 +19,7 @@ The webapp will allow the user to see the top five vanity numbers generated.
 [Implementation with more time](implementation-with-more-time)
 
 ## Try it out yourself!
-Call the phone number: 619-866-0474
+Call the phone number: **619-866-0474**
 
 View results on the website: https://dakal248wsvld.cloudfront.net
 
