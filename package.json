@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm run build-ui && webpack --config ./config/webpack-lambda-config.js",
     "cdk": "cdk",
-    "test": "jest",
+    "test": "jest --silent",
     "lint": "npx eslint .",
     "build-ui": "node scripts/build.js",
     "start-ui": "node scripts/start.js",
@@ -22,17 +22,17 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "@aws-cdk/aws-cloudfront": "1.70.0",
     "@aws-cdk/aws-apigateway": "1.70.0",
+    "@aws-cdk/aws-cloudfront": "1.70.0",
     "@aws-cdk/aws-dynamodb": "1.70.0",
     "@aws-cdk/aws-iam": "1.70.0",
     "@aws-cdk/aws-lambda": "1.70.0",
     "@aws-cdk/aws-lambda-nodejs": "1.70.0",
     "@aws-cdk/aws-s3": "1.70.0",
+    "@aws-cdk/aws-s3-assets": "1.70.0",
     "@aws-cdk/aws-s3-deployment": "1.70.0",
     "@aws-cdk/core": "1.70.0",
     "@aws-cdk/custom-resources": "1.70.0",
-    "@aws-cdk/aws-s3-assets": "1.70.0",
     "@babel/core": "7.12.3",
     "@babel/runtime": "^7.13.9",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
@@ -40,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "aws-sdk": "2.853.0",
+    "aws-sdk-mock": "^5.1.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.0",
     "babel-loader": "8.1.0",
@@ -111,63 +112,6 @@
         "node": ">= 12"
       }
     }
-  },
-  "jest": {
-    "roots": [
-      "<rootDir>/lib"
-    ],
-    "collectCoverageFrom": [
-      "lib/**/*.{js,jsx,ts,tsx}",
-      "!lib/**/*.d.ts"
-    ],
-    "setupFiles": [
-      "react-app-polyfill/jsdom"
-    ],
-    "setupFilesAfterEnv": [],
-    "testMatch": [
-      "<rootDir>/test/*.test.js"
-    ],
-    "testEnvironment": "jsdom",
-    "testRunner": "<rootDir>/node_modules/jest-circus/runner.js",
-    "transform": {
-      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
-      "^.+\\.module\\.(css|sass|scss)$"
-    ],
-    "modulePaths": [],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "web.ts",
-      "ts",
-      "web.tsx",
-      "tsx",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node"
-    ],
-    "watchPlugins": [
-      "jest-watch-typeahead/filename",
-      "jest-watch-typeahead/testname"
-    ],
-    "resetMocks": true
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
